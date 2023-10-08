@@ -1,7 +1,7 @@
 # ChatApp
 
 ChatApp is a Full Stack Chatting App.
-Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
+WebSockets let developers build realtime functionality into their apps by enabling the sending off small chunks of data over a single persistent connection, in both directions. Using WebSockets in the front end is fairly straightforward, as there is a WebSocket API built into all modern browsers.
 ## Tech Stack
 
 **Client:** React JS
@@ -22,7 +22,6 @@ Clone the project
 Go to the project directory
 
 Install dependencies
-
 ```bash
     "dependencies":
     "bcryptjs": "^2.4.3",
@@ -34,12 +33,13 @@ Install dependencies
     "mongoose": "^7.5.3",
     "ws": "^8.14.2"
 ```
-
-
+```bash
+    create a .env file for a list of key pair values that set specific variables for a container deployment
+```
 Start the server
 
 ```bash
-   //open terminal
+    //open terminal
     cd api
     nodemon index.js
   
