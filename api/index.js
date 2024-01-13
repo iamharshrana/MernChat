@@ -21,13 +21,14 @@ const jwtSecret = process.env.JWT_SECRET;
 
 
 const app = express();
-app.use('/uploads', express.static(__dirname+ '/uploads'));
-app.use(express.json());
-app.use(cookieParser());
 app.use(cors({
     credentials: true,
     origin : process.env.CLIENT_URL,
 }));
+app.use('/uploads', express.static(__dirname+ '/uploads'));
+app.use(express.json());
+app.use(cookieParser());
+
 
 app.get('/test', (req, res) => {
     res.json('test okk welcome to MongoDB');
