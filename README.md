@@ -24,17 +24,15 @@ Go to the project directory
 Start the server
 
 ```bash
-    //open terminal
-    cd api
-    npm i
-    yarn install
-    nodemon index.js
+  cd api
+  npm i
+  yarn install
+  nodemon index.js
   
 ```
 Start the Client
 
 ```bash
-  //open now terminal
   cd client
   npm i
   yarn install
